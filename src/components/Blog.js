@@ -23,7 +23,7 @@ import {
     };
     const deleteRequest = async () => {
       const res = await axios
-        .delete(`http://localhost:5000/api/blog/${id}`)
+        .delete(`https://blog-backend-mmoh.onrender.com/api/blog/${id}`)
         .catch((err) => console.log(err));
       const data = await res.data;
       return data;
